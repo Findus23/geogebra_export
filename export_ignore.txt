@@ -1,0 +1,8 @@
+analysis_beispiel_1.ggb
+analysis_beispiel_2.ggb
+analysis_d_hospital.ggb
+dreieck_hoehenschnittpunkt.ggb
+geogebra3d_1.ggb
+modell_taschengeld.ggb
+münzwurf.ggb
+münzwurf_neu.ggb
