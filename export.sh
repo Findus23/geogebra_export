@@ -1,10 +1,13 @@
 #!/bin/bash
 
+TEXTDOMAIN=geogebra_export
+TEXTDOMAINDIR=./
+
 geogebra --v
 if [ ! -d export ]
 then
 	mkdir ./export
-	echo "Ordner 'Export' erstellt"
+	echo $"folder 'Export' created"
 fi
 
 >export_log.txt # Log leeren
@@ -17,15 +20,15 @@ else
 fi
 echo "$dpi dpi"
 #Dateiformat auswählen
-dateiendung=$(zenity --list --width=500 --height=250 --text "Ausgabedateiformat" --title "Dateiformat" --column Dateiendung --column Beschreibung \
-pdf			"Dokument" \
-png			"Bild" \
-svg			"Vektorgrafik" \
-emf			"Windows Metafile" \
-eps			"Encapsulated PostScript" 2>/dev/null |rev|cut -c -3 |rev)
+dateiendung=$(zenity --list --width=500 --height=250 --text $"Please select file format" --title $"file format" --column Dateiendung --column Beschreibung \
+pdf			$"document" \
+png			$"image" \
+svg			$"vector image" \
+emf			$"Windows Metafile" \
+eps			$"Encapsulated PostScript" 2>/dev/null |rev|cut -c -3 |rev)
 if [ -z "$dateiendung" ]
 then
-	echo "kein Dateiformat ausgewählt"
+	echo $"no file format selected"
 	exit 1
 fi
 # Konvertieren
@@ -38,15 +41,15 @@ for x in *.ggb; do
 		if ! grep -Fq "$name" export_ignore.txt 
 		then
 			geogebra --export=$ausgabedatei --dpi=$dpi --showAlgebraInput=false --showAlgebraWindow=false --showSpreadsheet=false --showCAS=false --versionCheckAllow=false $x >> export_log.txt 2>&1
-			echo "$x fertig"
+			echo $"$x finished"
 			echo ""
 			sleep 1
 		else
-			echo "$x ignoriert"
+			echo $"$x ignored"
 			echo ""
 		fi
 	else
-		echo "$x wurde schon konvertiert ($ausgabedatei)"
+		echo $"$x already converted ($ausgabedatei)"
 		echo ""
 	fi
 done

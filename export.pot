@@ -1,0 +1,36 @@
+#: export.sh:10
+msgid "folder 'Export' created"
+msgstr ""
+#: export.sh:23
+msgid "Please select file format"
+msgstr ""
+#: export.sh:23
+msgid "file format"
+msgstr ""
+#: export.sh:23
+msgid "document"
+msgstr ""
+#: export.sh:23
+msgid "image"
+msgstr ""
+#: export.sh:23
+msgid "vector image"
+msgstr ""
+#: export.sh:23
+msgid "Windows Metafile"
+msgstr ""
+#: export.sh:23
+msgid "Encapsulated PostScript"
+msgstr ""
+#: export.sh:31
+msgid "no file format selected"
+msgstr ""
+#: export.sh:44
+msgid "$x finished"
+msgstr ""
+#: export.sh:48
+msgid "$x ignored"
+msgstr ""
+#: export.sh:52
+msgid "$x already converted ($ausgabedatei)"
+msgstr ""

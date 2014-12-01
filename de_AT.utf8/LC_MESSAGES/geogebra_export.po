@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: export\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Lukas Winkler <l.winkler23@gmx.at>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: bash --dump-po-strings\n"
+"X-Poedit-SearchPath-0: ../../export.sh\n"
+
+#: export.sh:10
+msgid "folder 'Export' created"
+msgstr "Ordner 'Export' erstellt"
+
+#: export.sh:23
+msgid "Please select file format"
+msgstr "Bitte Dateiformat für Export auswählen"
+
+#: export.sh:23
+msgid "file format"
+msgstr "Dateiformat"
+
+#: export.sh:23
+msgid "document"
+msgstr "Dokument"
+
+#: export.sh:23
+msgid "image"
+msgstr "Grafik"
+
+#: export.sh:23
+msgid "vector image"
+msgstr "Vektorgrafik"
+
+#: export.sh:23
+msgid "Windows Metafile"
+msgstr "Windows Metafile"
+
+#: export.sh:23
+msgid "Encapsulated PostScript"
+msgstr "Encapsulated PostScript"
+
+#: export.sh:31
+msgid "no file format selected"
+msgstr "Kein Dateiformat ausgewählt"
+
+#: export.sh:44
+msgid "$x finished"
+msgstr "$x fertig"
+
+#: export.sh:48
+msgid "$x ignored"
+msgstr "$x ignoriert"
+
+#: export.sh:52
+msgid "$x already converted ($ausgabedatei)"
+msgstr "$x wurde schon konvertiert ($ausgabedatei)"
